@@ -1,0 +1,112 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+header {
+  background: #555;
+  color: #fff;
+  padding: 30px;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  min-height: 80vh;
+  padding: 20px 0;
+  margin: auto;
+}
+
+table, form {
+  float: left;
+  padding: 20px;
+}
+
+table {
+  width: 60%;
+}
+
+td, th {
+  background: #eee;
+  padding: 10px;
+  text-align: left;
+}
+
+td img {
+  max-width: 200px;
+}
+
+form {
+  width: 40%;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="number"], select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font: inherit;
+}
+
+button, input[type="submit"], input[type="reset"], .button {
+  display: block;
+  background: #333;
+  color: white;
+  border: 1px solid #333;
+  padding: 10px 20px;
+  margin: 5px 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  text-decoration: none;
+  text-align: center;
+}
+
+button:hover, input[type="submit"]:hover, input[type="reset"]:hover, .button:hover {
+  transition: 1s all;
+  background: #000;
+}
+
+.success {
+  background: palegreen;
+  color: darkgreen;
+  font-weight: bold;
+  padding: 20px;
+  margin: 20px 0;
+  width: 40%;
+  float: left;
+}
+
+.error {
+  background: lightpink;
+  color: darkred;
+  font-weight: bold;
+  padding: 20px;
+  margin: 20px 0;
+  width: 40%;
+  float: left;
+}

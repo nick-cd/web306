@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Heading Tags</title>
+</head>
+<body>
+  <!--
+  Heading Tags
+  
+  Heading tags are used to define headings in a web page. Headings are used by
+  browsers, screen readers and search engines to create an outline of the page
+  by defining the the importance of headings using numbered tags which range
+  from <h1> to <h6>.
+
+  <h1> would be the most important heading and <h6> would be
+  the least important heading.
+  -->
+
+  <h1>Heading</h1>
+  <!--
+  You MUST start with an <h1> tag, use the headings in numerical order and MUST
+  NOT skip from one level to the next.
+  For instance, immediately after using an <h1> tag, you should use an <h2> tag
+  and should not use <h3> to <h6> tags until you have.
+  You could use another <h2> tag after using an <h2> tag though.
+  -->
+  <h2>Heading</h2>
+  <h3>Heading</h3>
+  <h4>Heading</h4>
+  <h5>Heading</h5>
+  <h6>Heading</h6>
+
+  <!--
+  Historically, there was a rule that you could only have one <h1> tag per HTML
+  page but this rule was changed with HTML5. However, you may now only use one
+  <h1> tag per sectioning content element
+  -->
+  <section>
+    <h1>Second Heading 1</h1>
+    <!--
+    Sectioning Content
+
+    Sectioning content elements are elements which are used to define sections
+    where the numbering of heading tags restarts.
+
+    This means that every sectioning content element can have its own <h1> tag.
+    However, every sectioning content element may only have one <h1> tag inside
+    of it until another sectioning content element is created inside of it.
+    -->
+    <article>
+      <h1>Third Heading 1</h1>
+    </article>
+  </section>
+</body>
+</html>

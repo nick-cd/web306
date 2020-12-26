@@ -1,0 +1,80 @@
+/*
+CSS Selectors and Targeting
+
+CSS targets HTML elements using selectors. CSS selectors could be the name of
+an HTML tag, a class, an ID or even an attribute.
+
+To target an HTML tag, just use the name of the tag and follow it with curly
+braces where the CSS styles will be specified.
+*/
+
+body {
+
+}
+
+/* To target a class use a period and then the class name. */
+
+.some-class {
+
+}
+
+/* To target an ID use a number sign (or hashtag symbol) followed by the name of the ID. */
+
+#some-id {
+
+}
+
+/* To target a tag with an attribute use square braces with the attribute name
+and optionally the value inside. */
+
+[name=”email”] {
+
+}
+
+/* You can target multiple CSS selectors by using a comma separated list. */
+h1, h2, h3, h4, h5, h6 {
+
+}
+
+/* You can target nested HTML elements by using a space between selectors,
+without a comma between them. */
+
+nav ul li a {
+
+}
+
+/* To target ONLY direct children of an element, use the greater than symbol. */
+
+nav > ul > li > a {
+
+}
+
+/* To target ALL HTML elements use the asterisk. */
+
+* {
+
+}
+
+/*
+Properties and Values
+
+Once you have targeted an HTML element using a CSS selector, you can change the
+styles of that element by changing the values of CSS properties.
+
+Properties are the names of the types of styles you are changing such as color,
+background, width and font-family.
+
+Values are the options which properties are set to such as red, 100% and Arial.
+*/
+
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background: darkorchid;
+	color: white;
+	padding: 50px;
+  text-align: center;
+}

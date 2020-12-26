@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Inline vs. Block</title>
+  <style media="screen">
+    div, span {
+      background: lightblue;
+      padding: 30px;
+    }
+    .inline-block-element {
+      display: inline-block;
+      padding: 30px;
+    }
+  </style>
+</head>
+<body>
+  <!--
+  Every HTML element has a default “display” property which determines how that
+  element takes up space and is positioned on the web page.
+
+  Inline elements start on the current line of text and only take up the space
+  of whatever content is inside them.
+  -->
+  <span>Inline</span>
+  <span>Inline</span>
+  <!--
+  Block elements start on a new line and take up 100% of the width of the screen.
+  -->
+  <div>Block</div>
+  <span>Inline</span>
+  <div class="inline-block-element">Inline-Block</div>
+  <div class="inline-block-element">Inline-Block</div>
+  <div>Block</div>
+  <!--
+  Examples of inline elements include:
+  <span>, <a>, <em>, <strong>, <i>, <b>, <u>, <img>
+
+  Most other tags are considered block elements.
+  -->
+</body>
+</html>

@@ -1,0 +1,73 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+header, footer {
+  background: #373737;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+form {
+  margin: 20px 0;
+}
+
+input[type="text"], input[type="number"] {
+  padding: 10px;
+  font: inherit;
+}
+
+button, input[type="submit"], input[type="reset"], .button {
+  background: #706642;
+  color: white;
+  border: 1px solid #706642;
+  padding: 10px 20px;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  text-decoration: none;
+}
+
+button:hover, input[type="submit"]:hover, input[type="reset"]:hover, .button:hover {
+  transition: 1s all;
+  background: #373737;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.content {
+  max-width: 1200px;
+  min-height: 80vh;
+  margin: 30px auto;
+}
+
+.elephant{
+  max-width: 230px;
+  height: auto;
+  margin: 20px 0;
+}
+
+.feed-cookie{
+  position: relative;
+  background: url('../img/feed.jpg') no-repeat;
+  height: 500px;
+  margin: 20px 0;
+}
+
+.cookie{
+  position: absolute;
+  bottom: 20px;
+  left: 450px;
+  width: 150px;
+  height: auto;
+}

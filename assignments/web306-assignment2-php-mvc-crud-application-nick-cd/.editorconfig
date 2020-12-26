@@ -1,0 +1,25 @@
+# Check http://editorconfig.org for more information
+# This is the main config file for this project:
+root = true
+
+[*]
+charset = utf-8
+indent_style = space
+trim_trailing_whitespace = true
+end_of_line = lf
+insert_final_newline = true
+
+[*.html]
+indent_size = 2
+
+[*.php]
+indent_size = 4
+
+[views/*.php]
+indent_size = 2
+
+[*.tpl.php]
+indent_size = 2
+
+[*.sql]
+indent_size = 2

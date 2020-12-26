@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hyper-Text Transfer Protocols</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+  <style media="screen">
+    #diagram{
+      position: relative;
+      margin: 30px 0;
+      min-height: 450px;
+    }
+    #diagram h2{
+      position: absolute;
+      left: 50%;
+      margin: 0;
+    }
+    #request{
+      top: 0;
+    }
+    #response{
+      bottom: 0;
+    }
+    #diagram img{
+      padding: 80px 0 0 0;
+    }
+    #request-response{
+      position: absolute;
+      top: 5%;
+      left: 35%;
+      z-index: -1;
+      font-size: 400px;
+      color: #00FFFF;
+    }
+    .slow-spin {
+      -webkit-animation: fa-spin 6s infinite linear;
+      animation: fa-spin 6s infinite linear;
+    }
+  </style>
+</head>
+<body>
+  <header class="jumbotron">
+    <h1 class="text-center">Hyper-Text Transfer Protocols</h1>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="col-2">
+        <h2 class="text-center"><span class="fa fa-laptop fw"></span> Client</h2>
+        <ul class="list-group lead">
+          <li class="list-group-item">Local</li>
+          <li class="list-group-item">Web Browser</li>
+          <li class="list-group-item">HTML</li>
+          <li class="list-group-item">CSS</li>
+          <li class="list-group-item">SASS</li>
+          <li class="list-group-item">Javascript</li>
+          <li class="list-group-item">Images</li>
+          <li class="list-group-item">Fonts</li>
+          <li class="list-group-item">Etc.</li>
+        </ul>
+      </div>
+      <div id="diagram" class="col-8">
+        <h2 id="request">Request</h2>
+        <img src="img/httpprotocol.png" alt="HTTP Protocol" class="img-fluid">
+        <span id="request-response" class="fa fa-refresh slow-spin"></span>
+        <h2 id="response">Response</h2>
+      </div>
+      <div class="col-2">
+        <h2 class="text-center"><span class="fa fa-server fw"></span> Server</h2>
+        <ul class="list-group lead">
+          <li class="list-group-item">Remote</li>
+          <li class="list-group-item"><strong>LAMP</strong> stack</li>
+          <li class="list-group-item"><strong>L</strong>inux</li>
+          <li class="list-group-item"><strong>A</strong>pache</li>
+          <li class="list-group-item"><strong>M</strong>ySQL or <strong>M</strong>ariaDB</li>
+          <li class="list-group-item"><strong>P</strong>HP or <strong>P</strong>ython</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-center">The Request/Response Process</h1>
+        <ol class="lead">
+          <li>The client sends a request to the server.</li>
+          <li>In response, the server processes a server-side language like PHP, Python or Ruby on the back end and returns HTML, CSS and JavaScript code to display a web page on the front end.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-center">XAMPP</h1>
+        <ol class="lead">
+          <li><a href="https://www.apachefriends.org/index.html" target="_blank">XAMPP</a> is a collection of software which allows us to run server and database software in our local environment</li>
+          <li>XAMPP stands for X (your operating system), Apache, MySQL/MariaDB, PHP</li>
+          <li>This forms what is known as your development "stack"</li>
+          <li>The LAMP Stack
+            <ol>
+              <li>The traditional "stack" which is used by developers is known as the LAMP stack</li>
+              <li>The LAMP Stack constists of:
+                <ol>
+                  <li><strong>L</strong>inux is used on servers but XAMPP allows us to use Windows or Mac OS as well</li>
+                  <li><strong>A</strong>pache is the server software</li>
+                  <li><strong>M</strong>ySQL or <strong>M</strong>ariaDB which are database software</li>
+                  <li><strong>P</strong>HP is our back-end scripting language</li>
+                </ol>
+              </li>
+              <li>If an employer asks for LAMP developers or asks you what "your stack" is, this is what they are referring to</li>
+              <li>The second "P" in XAMPP actually stands for Perl, but we won't be using that</li>
+              <li>Python developers also call their stack a LAMP stack</li>
+              <li>Other stacks include the LAMR stack (Ruby developers) and the MEAN stack (NodeJS developers)</li>
+            </ol>
+          </li>
+          <li>Download XAMPP at the <a href="https://www.apachefriends.org/index.html" target="_blank">Apache Friends</a> website (they'll be there for you!)</li>
+          <li>Once you have XAMPP installed turn on Apache and MySQL/MariaDB</li>
+          <li>Remember to save all projects which use technologies that are dependant on server software such as PHP and AJAX in C:/xampp/htdocs so that the server can find them, unless you have set up a virtual host (ask Tim about this in the lab)</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

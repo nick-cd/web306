@@ -1,0 +1,29 @@
+# In order to have the addresses direct to the index.php file we need to use a file called .htaccess in our public directory to rewrite our paths.
+
+# The .htaccess file is a configuation file which is used on Apache web servers to adjust server settings such as redirecting URLs and protecting passwords.
+
+# Below is the exact code used in the .htaccess file which the MVC framework Laravel uses.
+
+# Basically what it does is tell every address to redirect to the index.php file where it will load a page by call a method based on the address.
+
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>

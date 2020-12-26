@@ -1,0 +1,17 @@
+/* 
+Theme Name: Cool Theme
+Template: wp-forge
+Text Domain: cooltheme
+Theme URI: http://coolsite.com
+Description: A theme for A Cool Site
+Author: Cool Guy
+Author URI: http://coolguy.com
+Version: 1.0.0
+Tags: cool, light, gray, white, one-column
+
+Start adding your theme specific styles below.
+ */
+
+h1 {
+    color: red;
+}

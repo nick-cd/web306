@@ -1,0 +1,5 @@
+1. Go to github.com, and create an account
+2. Create a basic HTML page which introduces yourself and add some CSS
+3. Convert the HTML page to a PHP page which introduces yourself but make every piece of information which is specific to you a variable
+	which is concatenated or interpolated into the file:
+	'My name is ' . $name . ', I work at ' . $job . '. In my spare time I like to ' . $hobby . '.'

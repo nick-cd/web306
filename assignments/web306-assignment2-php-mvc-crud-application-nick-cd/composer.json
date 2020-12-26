@@ -1,0 +1,8 @@
+{
+    "name": "nick-cd/web306-assignment2-php-mvc-crud-application-nick-cd",
+    "description": "Web 306 Assignment 2",
+    "require": {
+        "symfony/dotenv": "^5.1"
+    },
+    "license": "GPL-3.0-or-later"
+}

@@ -1,0 +1,104 @@
+body {
+  background: url('../img/bg/desk.jpg') center center no-repeat #000;
+  background-size: 120%;
+  font-family: sans-serif;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 10px #fff;
+  margin: 0;
+}
+
+#phone {
+  width: 230px;
+  height: 450px;
+  margin: auto;
+  position: relative;
+  top: 80px;
+  box-shadow: 30px 30px 35px #111;
+  border-radius: 40px;
+  transform: rotate(-5deg);
+}
+
+.specs {
+  position: absolute;
+  z-index: -2;
+  top: 30px;
+  left: 40px;
+  width: 150px;
+}
+
+.specs ul {
+  padding: none;
+  text-align: left;
+}
+
+.interface {
+  background: url('../img/bg/phone.png') -190px center;
+  width: 250px;
+  height: 480px;
+  position: absolute;
+  z-index: 2;
+  top: -15px;
+}
+
+.contacts {
+  width: 200px;
+  position: absolute;
+  bottom: 60px;
+  left: 20px;
+  text-align: center;
+}
+
+.contacts h2 {
+  font-size: 18px;
+}
+
+.contacts a {
+  display: block;
+  background: green;
+  color: #fff;
+  text-decoration: none;
+  margin: 5px 0;
+  padding: 5px;
+  box-shadow: 0 0 10px green;
+  transition: .5s all;
+}
+
+.contacts a:hover {
+  background: darkgreen;
+}
+
+.contacts a.end {
+  background: red;
+  box-shadow: 0 0 10px red;
+}
+
+.contacts a.end:hover {
+  background: darkred;
+}
+
+.screen {
+  width: 220px;
+  height: 380px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  top: 35px;
+  left: 10px;
+  background: #222;
+  box-shadow: 0 0 10px lightblue inset;
+  position: absolute;
+}
+
+.screen h2 {
+  z-index: 1;
+  font-size: 20px;
+  width: 200px;
+  margin: 0;
+  padding: 28px 15px;
+  background: blue;
+}
+
+.screen img {
+  margin-left: -50%;
+}

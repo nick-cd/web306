@@ -1,0 +1,4 @@
+1. Create an associative array that holds blog posts and their associated data
+2. Loop through the blog posts and format them in an HTML page
+3. Add a "featured" key as a Boolean value to the blog posts associative array and use an if statement
+	to display featured posts differently than normal ones

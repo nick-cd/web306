@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Jason",
+    "age": 23,
+    "gender": "male",
+    "hobbies": ["soccer", "art", "reading"]
+  },
+  {
+    "name": "Jaye Sohn",
+    "age": 36,
+    "gender": "female",
+    "hobbies": ["UFC", "dance", "board games"]
+  },
+  {
+    "name": "Jaye's Son",
+    "age": 16,
+    "gender": "male",
+    "hobbies": ["engineering", "gymnastics", "photography"]
+  }
+]

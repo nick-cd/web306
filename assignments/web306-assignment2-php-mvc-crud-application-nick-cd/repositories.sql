@@ -1,0 +1,83 @@
+-- phpMyAdmin SQL Dump
+-- version 5.0.4
+-- https://www.phpmyadmin.net/
+--
+-- Host: db
+-- Generation Time: Nov 03, 2020 at 10:10 PM
+-- Server version: 10.4.15-MariaDB-1:10.4.15+maria~focal
+-- PHP Version: 7.4.11
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `mariadb`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `repositories`
+--
+
+CREATE TABLE `repositories` (
+  `id` int(11) NOT NULL,
+  `repo` blob NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `repositories`
+--
+
+INSERT INTO `repositories` (`id`, `repo`) VALUES
+(1, 0x547a6f784d446f69556d567762334e7064473979655349364d7a7037637a6f784e6a6f6941464a6c6347397a61585276636e6b41626d46745a534937637a6f344f694a755a58647a596d396864434937637a6f784e6a6f6941464a6c6347397a61585276636e6b4162476c7561794937637a6f7a4e6a6f696148523063484d364c79396e6158526f64574975593239744c32356c64334e69623246304c32356c64334e6962324630496a747a4f6a45334f694941556d567762334e7064473979655142706257466e5a534937637a6f774f6949694f33303d);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `repositories`
+--
+ALTER TABLE `repositories`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `repositories`
+--
+ALTER TABLE `repositories`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+--
+-- UPDATE
+--
+UPDATE `repositories`
+  SET repo = 'TzoxMDoiUmVwb3NpdG9yeSI6Mzp7czoxNjoiAFJlcG9zaXRvcnkAbmFtZSI7czo2OiJuZW92aW0iO3M6MTY6IgBSZXBvc2l0b3J5AGxpbmsiO3M6MzI6Imh0dHBzOi8vZ2l0aHViLmNvbS9uZW92aW0vbmVvdmltIjtzOjE3OiIAUmVwb3NpdG9yeQBpbWFnZSI7czowOiIiO30='
+  WHERE id = 1;
+
+--
+-- DELETE
+--
+DELETE FROM `repositories`
+  WHERE id = 1;
+
+--
+-- End Transaction
+--
+COMMIT;

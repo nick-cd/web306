@@ -1,0 +1,109 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Cabin|Rock+Salt');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  background: $light;
+}
+
+img {
+  @include img-fluid;
+}
+
+header {
+  background: url('../images/cair-paravel.jpg') center top no-repeat $dark;
+  background-size: cover;
+  color: $light;
+}
+
+header h1 {
+  text-shadow: 0 0 10px $dark;
+  font-weight: 100;
+  font-size: 3rem;
+  padding: 80px 60px;
+  margin: 0;
+}
+
+footer {
+  background: $dark;
+  color: $light;
+  text-align: center;
+  padding: 20px;
+}
+
+nav {
+  background: rgba($dark, .6);
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #F9E864;
+  padding: 10px 20px;
+}
+
+nav ul li a:hover {
+  transition: all 1s;
+  background: $dark;
+  color: $light;
+  text-decoration: none;
+}
+
+nav ul li a.current {
+  background: $light;
+  color: $dark;
+  border-radius: 10px 10px 0 0;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="number"], input[type="checkbox"], select, textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font: inherit;
+}
+
+button, input[type="submit"], input[type="reset"], .button {
+  display: inline-block;
+  background: $dark;
+  color: white;
+  border: 1px solid $dark;
+  padding: 10px 20px;
+  margin: 5px 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  text-decoration: none;
+  text-align: center;
+}
+
+button:hover, input[type="submit"]:hover, input[type="reset"]:hover, .button:hover {
+  transition: 1s all;
+  background: $dark;
+}
+
+.content-wrapper {
+  min-height: 60vh;
+  padding: 30px 0;
+}
